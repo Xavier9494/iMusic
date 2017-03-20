@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="CatagoryListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaO-5n-QBU">
+                        <rect key="frame" x="8" y="8" width="359" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="歌名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBQ-i6-bvP">
+                                <rect key="frame" x="10" y="5" width="155" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="歌手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh4-6O-qHU">
+                                <rect key="frame" x="10" y="30.5" width="117.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_list_btn_more.png" translatesAutoresizingMaskIntoConstraints="NO" id="JE6-0V-NjT">
+                                <rect key="frame" x="324" y="20" width="25" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="C1a-hc-lL1"/>
+                                    <constraint firstAttribute="width" constant="25" id="EfR-Y5-GNV"/>
+                                </constraints>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="未下载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dW-O6-Pl1">
+                                <rect key="frame" x="265" y="19" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Azd-Qi-8Oc"/>
+                            <constraint firstItem="oBQ-i6-bvP" firstAttribute="leading" secondItem="DaO-5n-QBU" secondAttribute="leading" constant="10" id="Kqo-Ny-yFq"/>
+                            <constraint firstItem="Sh4-6O-qHU" firstAttribute="leading" secondItem="oBQ-i6-bvP" secondAttribute="leading" id="QZp-gg-BGn"/>
+                            <constraint firstItem="JE6-0V-NjT" firstAttribute="leading" secondItem="4dW-O6-Pl1" secondAttribute="trailing" constant="8" id="RFz-68-25Q"/>
+                            <constraint firstAttribute="trailing" secondItem="JE6-0V-NjT" secondAttribute="trailing" constant="10" id="WTd-UO-r85"/>
+                            <constraint firstItem="4dW-O6-Pl1" firstAttribute="centerY" secondItem="JE6-0V-NjT" secondAttribute="centerY" id="ZV0-tP-sGI"/>
+                            <constraint firstItem="JE6-0V-NjT" firstAttribute="centerY" secondItem="DaO-5n-QBU" secondAttribute="centerY" id="bZZ-id-FbN"/>
+                            <constraint firstItem="oBQ-i6-bvP" firstAttribute="top" secondItem="DaO-5n-QBU" secondAttribute="top" constant="5" id="co0-6m-xxE"/>
+                            <constraint firstItem="Sh4-6O-qHU" firstAttribute="top" secondItem="oBQ-i6-bvP" secondAttribute="bottom" constant="5" id="kq6-bB-25L"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYe-vn-CHH">
+                        <rect key="frame" x="8" y="68" width="359" height="43.5"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59736689814814814" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fYe-vn-CHH" firstAttribute="top" secondItem="DaO-5n-QBU" secondAttribute="bottom" id="3zy-ZZ-g5l"/>
+                    <constraint firstItem="DaO-5n-QBU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Uw-95-q6H"/>
+                    <constraint firstItem="DaO-5n-QBU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W8j-Ag-vAm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fYe-vn-CHH" secondAttribute="bottom" id="bvf-NK-7Lw"/>
+                    <constraint firstItem="fYe-vn-CHH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qi2-mj-eeM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fYe-vn-CHH" secondAttribute="trailing" id="ql3-sz-pRA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="DaO-5n-QBU" secondAttribute="trailing" id="wgt-cF-PE8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="OperationView" destination="fYe-vn-CHH" id="nWl-X9-PWS"/>
+                <outlet property="isAlreadyDown" destination="4dW-O6-Pl1" id="DCB-94-xtg"/>
+                <outlet property="moreButton" destination="JE6-0V-NjT" id="EDS-YS-7Hi"/>
+                <outlet property="singerName" destination="Sh4-6O-qHU" id="Qlk-9W-Qzi"/>
+                <outlet property="songName" destination="oBQ-i6-bvP" id="NXK-v1-Kb5"/>
+            </connections>
+            <point key="canvasLocation" x="520.5" y="210"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cm2_list_btn_more.png" width="26" height="21"/>
+    </resources>
+</document>

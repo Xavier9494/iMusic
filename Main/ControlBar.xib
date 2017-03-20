@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ControlBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="GSW-rG-4Y8">
+                    <rect key="frame" x="10" y="6" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="J0B-0e-m70"/>
+                        <constraint firstAttribute="height" constant="48" id="bO9-eh-6JH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zJ-MI-hLJ">
+                    <rect key="frame" x="307" y="28" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="Y7Y-6m-duJ"/>
+                        <constraint firstAttribute="width" constant="24" id="mNL-GW-ny6"/>
+                    </constraints>
+                    <state key="normal" image="暂停.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ5-mC-fBJ">
+                    <rect key="frame" x="341" y="28" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="Djd-Ie-utW"/>
+                        <constraint firstAttribute="height" constant="24" id="tBt-P3-JRj"/>
+                    </constraints>
+                    <state key="normal" image="前进.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知歌手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3w-cf-ASt">
+                    <rect key="frame" x="68" y="42" width="195" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未知歌曲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1N6-wa-Qgi">
+                    <rect key="frame" x="68" y="16" width="68" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DuH-Kc-SDQ">
+                    <rect key="frame" x="68" y="6" width="297" height="2"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQU-S6-Rys">
+                    <rect key="frame" x="273" y="28" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="dlp-Zk-eqd"/>
+                        <constraint firstAttribute="height" constant="24" id="xIR-Eq-03M"/>
+                    </constraints>
+                    <state key="normal" image="后退.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vQ5-mC-fBJ" secondAttribute="trailing" constant="10" id="7at-ow-Mpq"/>
+                <constraint firstItem="H3w-cf-ASt" firstAttribute="top" secondItem="1N6-wa-Qgi" secondAttribute="bottom" constant="5" id="8aB-E3-FGA"/>
+                <constraint firstItem="1N6-wa-Qgi" firstAttribute="trailing" secondItem="H3w-cf-ASt" secondAttribute="trailing" id="8kt-kA-iAY"/>
+                <constraint firstItem="5zJ-MI-hLJ" firstAttribute="leading" secondItem="yQU-S6-Rys" secondAttribute="trailing" constant="10" id="N9V-Ir-qkp"/>
+                <constraint firstAttribute="trailing" secondItem="DuH-Kc-SDQ" secondAttribute="trailing" constant="10" id="Ndc-jy-x6q"/>
+                <constraint firstItem="H3w-cf-ASt" firstAttribute="leading" secondItem="GSW-rG-4Y8" secondAttribute="trailing" constant="10" id="RwA-o6-HwC"/>
+                <constraint firstItem="H3w-cf-ASt" firstAttribute="bottom" secondItem="GSW-rG-4Y8" secondAttribute="bottom" id="X19-dr-4jf"/>
+                <constraint firstItem="DuH-Kc-SDQ" firstAttribute="leading" secondItem="GSW-rG-4Y8" secondAttribute="trailing" constant="10" id="aCN-J0-jJA"/>
+                <constraint firstItem="yQU-S6-Rys" firstAttribute="leading" secondItem="H3w-cf-ASt" secondAttribute="trailing" constant="10" id="hDz-ne-yeh"/>
+                <constraint firstItem="5zJ-MI-hLJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="ne8-It-BOU"/>
+                <constraint firstItem="yQU-S6-Rys" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="oaD-CW-EuS"/>
+                <constraint firstItem="GSW-rG-4Y8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qaO-TZ-iSN"/>
+                <constraint firstItem="GSW-rG-4Y8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="tYl-45-gWh"/>
+                <constraint firstItem="5zJ-MI-hLJ" firstAttribute="leading" secondItem="H3w-cf-ASt" secondAttribute="trailing" constant="30" id="uBo-fR-dRT"/>
+                <constraint firstItem="DuH-Kc-SDQ" firstAttribute="top" secondItem="GSW-rG-4Y8" secondAttribute="top" id="v2G-Pc-ECa"/>
+                <constraint firstItem="DuH-Kc-SDQ" firstAttribute="leading" secondItem="GSW-rG-4Y8" secondAttribute="leading" constant="10" id="v9h-8M-zlK"/>
+                <constraint firstItem="1N6-wa-Qgi" firstAttribute="leading" secondItem="H3w-cf-ASt" secondAttribute="leading" id="wub-YE-AAi"/>
+                <constraint firstItem="vQ5-mC-fBJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="y0n-Fh-P60"/>
+                <constraint firstItem="vQ5-mC-fBJ" firstAttribute="leading" secondItem="5zJ-MI-hLJ" secondAttribute="trailing" constant="10" id="ybP-ed-xZ1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="v9h-8M-zlK"/>
+                    <exclude reference="8kt-kA-iAY"/>
+                    <exclude reference="uBo-fR-dRT"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="nextButton" destination="vQ5-mC-fBJ" id="OUf-jl-6oH"/>
+                <outlet property="playOrPauseButton" destination="5zJ-MI-hLJ" id="HXx-el-Rri"/>
+                <outlet property="previewButton" destination="yQU-S6-Rys" id="T0I-eA-iYp"/>
+                <outlet property="progressView" destination="DuH-Kc-SDQ" id="VTU-1J-Qnl"/>
+                <outlet property="singerImageView" destination="GSW-rG-4Y8" id="VJ2-cH-yFo"/>
+                <outlet property="singerNameLabel" destination="H3w-cf-ASt" id="rt3-ma-nZG"/>
+                <outlet property="songTitleLabel" destination="1N6-wa-Qgi" id="iJ5-Kd-wMY"/>
+            </connections>
+            <point key="canvasLocation" x="300.5" y="627"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+        <image name="前进.png" width="60" height="60"/>
+        <image name="后退.png" width="60" height="60"/>
+        <image name="暂停.png" width="60" height="60"/>
+    </resources>
+</document>

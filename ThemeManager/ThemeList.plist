@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>伦敦街景</key>
+	<array>
+		<string>伦敦街景1.jpg</string>
+		<string>伦敦街景2.jpg</string>
+		<string>伦敦街景3.jpg</string>
+		<string>伦敦街景4.jpg</string>
+	</array>
+	<key>欧美美女</key>
+	<array>
+		<string>欧美美女1.jpg</string>
+		<string>欧美美女2.jpg</string>
+		<string>欧美美女3.jpg</string>
+	</array>
+	<key>铁塔</key>
+	<array>
+		<string>铁塔1.jpg</string>
+		<string>铁塔2.jpg</string>
+		<string>铁塔3.jpg</string>
+		<string>铁塔4.jpg</string>
+		<string>铁塔5.jpg</string>
+		<string>铁塔6.jpg</string>
+	</array>
+	<key>唯美城市</key>
+	<array>
+		<string>唯美城市1.jpg</string>
+		<string>唯美城市2.jpg</string>
+		<string>唯美城市3.jpg</string>
+		<string>唯美城市4.jpg</string>
+		<string>唯美城市5.jpg</string>
+		<string>唯美城市6.jpg</string>
+	</array>
+	<key>小清新</key>
+	<array>
+		<string>小清新1.jpg</string>
+		<string>小清新2.jpg</string>
+		<string>小清新3.jpg</string>
+		<string>小清新4.jpg</string>
+		<string>小清新5.jpg</string>
+		<string>小清新6.jpg</string>
+	</array>
+	<key>路</key>
+	<array>
+		<string>林间小路1.jpg</string>
+		<string>林间小路2.jpg</string>
+		<string>山间公路1.jpg</string>
+		<string>山间公路2.jpg</string>
+	</array>
+</dict>
+</plist>

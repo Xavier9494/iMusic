@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
+    <entity name="DownloadRecord" representedClassName="DownloadRecord" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentSize" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fileExtension" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="free" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="progress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="songid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalSize" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="MyLove" representedClassName="MyLove" syncable="YES">
+        <attribute name="songid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RecentListen" representedClassName="RecentListen" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="songid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webSongId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Song" representedClassName="Song" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SongList" representedClassName="SongList" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idOfSongs" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DownloadRecord" positionX="-36" positionY="9" width="128" height="240"/>
+        <element name="MyLove" positionX="-36" positionY="27" width="128" height="60"/>
+        <element name="RecentListen" positionX="-18" positionY="36" width="128" height="105"/>
+        <element name="Song" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="SongList" positionX="-63" positionY="-18" width="128" height="90"/>
+    </elements>
+</model>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PortraitViewController">
+            <connections>
+                <outlet property="portrait" destination="yvg-yg-NEz" id="AaB-xZ-36X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yvg-yg-NEz">
+                    <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="yvg-yg-NEz" secondAttribute="width" multiplier="1:1" id="L9f-0n-CFa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yvg-yg-NEz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Adt-gl-yc3"/>
+                <constraint firstItem="yvg-yg-NEz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="HD2-Rf-8fi"/>
+                <constraint firstItem="yvg-yg-NEz" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="MU2-0n-egG"/>
+                <constraint firstItem="yvg-yg-NEz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bVV-RM-9YT"/>
+                <constraint firstAttribute="trailing" secondItem="yvg-yg-NEz" secondAttribute="trailing" constant="50" id="gIg-As-s6k"/>
+                <constraint firstItem="yvg-yg-NEz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n8r-XT-kjK"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HD2-Rf-8fi"/>
+                    <exclude reference="gIg-As-s6k"/>
+                    <exclude reference="n8r-XT-kjK"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon.png" width="57" height="57"/>
+    </resources>
+</document>
